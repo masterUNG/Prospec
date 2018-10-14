@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="top1">175dp</dimen>
+    <dimen name="wietd_logo">200dp</dimen>
+    <dimen name="height_logo">180dp</dimen>
+</resources>

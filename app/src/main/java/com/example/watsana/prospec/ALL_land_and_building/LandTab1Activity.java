@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.watsana.prospec.R;
+import com.example.watsana.prospec.utility.MyAlert;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -85,7 +86,8 @@ public class LandTab1Activity extends AppCompatActivity {
                         || filename9.isEmpty() || filename10.isEmpty() || filename11.isEmpty() || filename12.isEmpty()) {
 
                     //Have Space
-
+                    MyAlert myAlert = new MyAlert(LandTab1Activity.this);
+                    myAlert.normalDialog("Have Space", "Please Fill All Blank");
 
                 }else {
 
