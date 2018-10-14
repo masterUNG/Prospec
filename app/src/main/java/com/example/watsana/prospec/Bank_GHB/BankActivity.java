@@ -5,20 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.example.watsana.prospec.ALL_land_and_building.HomeActivity;
 import com.example.watsana.prospec.R;
 
 public class BankActivity extends AppCompatActivity {
-    ImageButton imageView, imageView1;
+    ImageView imageView, imageView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank);
 
-        imageView = (ImageButton) findViewById(R.id.imageView);
-        imageView1 = (ImageButton) findViewById(R.id.imageView1);
+        imageView =  findViewById(R.id.imageView);
+        imageView1 =  findViewById(R.id.imageView1);
 
         //Get Event From Click Menu Land and Building
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +29,7 @@ public class BankActivity extends AppCompatActivity {
             }
         });
 
-        //Get Event From Click
+        //Get Event From Click Bank GHB
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

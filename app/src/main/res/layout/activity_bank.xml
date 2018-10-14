@@ -13,7 +13,7 @@
             android:layout_height="match_parent"
             tools:ignore="ScrollViewCount,UselessParent">
 
-
+            <!--View Group1-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,6 +26,7 @@
                     android:orientation="horizontal"
                     android:background="@drawable/bg">
 
+                    <!--Heand Title-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -58,6 +59,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <!--Line Orange-->
                 <View
                     android:id="@+id/view"
                     android:layout_width="match_parent"
@@ -70,122 +72,103 @@
                     android:layout_marginTop="3dp"
                     android:layout_height="5dp"
                     android:background="@android:color/holo_orange_dark" />
-
+                <!--Row1-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
                     tools:ignore="DisableBaselineAlignment">
 
+                    <!--item1-->
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView"
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bank_main"
-                            tools:ignore="ContentDescription,RtlHardcoded" />
-
-                        <TextView
-                            android:id="@+id/textView1"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:gravity="center"
-                            android:text="ALL"
-                            android:layout_gravity="center"
-                            android:textColor="#797474"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
-
-                        <ImageButton
-                            android:id="@+id/imageView1"
-                            android:layout_width="100dp"
                             android:layout_height="140dp"
                             android:layout_marginTop="18dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="25dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bank1_ghb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"
+                            android:src="@drawable/bank1_ghb" />
+
                     </LinearLayout>
 
+                    <!--item2-->
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="25dp"
+                            android:src="@drawable/bank1_ghb"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                    <!--item3-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
                             android:id="@+id/imageView2"
-                            android:layout_width="100dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="140dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="25dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bank2_gsb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:src="@drawable/bank2_gsb"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
+                    <!--item4-->
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView3"
-                            android:layout_width="100dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="140dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="25dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bank3_kbank"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:src="@drawable/bank3_kbank"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
+                    <!--item5-->
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView4"
-                            android:layout_width="100dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="135dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="20dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bank4_bay"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:src="@drawable/bank4_bay"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </LinearLayout>
 
+                <!--Row2-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -193,51 +176,43 @@
                     tools:ignore="DisableBaselineAlignment">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView5"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="25dp"
-                            android:layout_weight="1"
                             android:background="@drawable/bank5_bbl"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"/>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView6"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="25dp"
-                            android:layout_weight="1"
                             android:background="@drawable/bank6_cimb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
                         <ImageButton
                             android:id="@+id/imageView7"
@@ -251,12 +226,10 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
                         <ImageButton
                             android:id="@+id/imageView8"
@@ -270,12 +243,10 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
                         <ImageButton
                             android:id="@+id/imageView9"
@@ -289,6 +260,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <!--Row3-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -391,6 +363,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <!--Row4-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -494,6 +467,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <!--Row5-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

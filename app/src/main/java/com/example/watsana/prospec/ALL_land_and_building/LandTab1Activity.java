@@ -43,11 +43,97 @@ public class LandTab1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_land_tab1);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1000);
-        }
+        //Permissin Check
+        permissinCheck();
 
+        //Initial View
+        initialView();
+
+        //Get Event From Click land
+        landController();
+
+
+        //Back Controller
+        backController();
+
+        // Next Controller
+        nextController();
+
+        //Save Controller
+        saveController();
+    }//Main Method
+
+    private void saveController() {
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String filename1 = EditText1.getText().toString();
+                String filename2 = EditText2.getText().toString();
+                String filename3 = EditText3.getText().toString();
+                String filename4 = EditText4.getText().toString();
+                String filename5 = EditText5.getText().toString();
+                String filename6 = EditText6.getText().toString();
+                String filename7 = EditText7.getText().toString();
+                String filename8 = EditText8.getText().toString();
+                String filename9 = EditText9.getText().toString();
+                String filename10 = EditText10.getText().toString();
+                String filename11 = EditText11.getText().toString();
+                String filename12 = EditText12.getText().toString();
+
+
+                if (!filename1.equals("") && !filename2.equals("") && !filename3.equals("") && !filename4.equals("")
+                        && !filename5.equals("") && !filename6.equals("") && !filename7.equals("") && !filename8.equals("")
+                        && !filename9.equals("") && !filename10.equals("") && !filename11.equals("") && !filename12.equals("")){
+
+                    saveTextAsFile(filename1, filename2, filename3, filename4 , filename5, filename6,
+                            filename7, filename8, filename9, filename10 , filename11, filename12);
+                }
+            }
+        });
+    }
+
+    private void nextController() {
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandTab1Activity.this, LandTab2Activity.class));
+            }
+        });
+    }
+
+    private void backController() {
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandTab1Activity.this, LandsActivity.class));
+            }
+        });
+    }
+
+    private void landController() {
+        imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandTab1Activity.this, LandsActivity.class));
+            }
+        });
+
+        spinner1 = (Spinner) findViewById(R.id.spinner1);
+
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(LandTab1Activity.this, parent.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    private void initialView() {
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
@@ -82,72 +168,15 @@ public class LandTab1Activity extends AppCompatActivity {
         EditText12 = (EditText) findViewById(R.id.EditText12);
 
         imageView7 = (ImageButton) findViewById(R.id.imageView7);
-
-        //Get Event From Click land
-        imageView7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LandTab1Activity.this, LandsActivity.class));
-            }
-        });
-
-        spinner1 = (Spinner) findViewById(R.id.spinner1);
-
-        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(LandTab1Activity.this, parent.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
-        //Get Event From Click land
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LandTab1Activity.this, LandsActivity.class));
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LandTab1Activity.this, LandTab2Activity.class));
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String filename1 = EditText1.getText().toString();
-                String filename2 = EditText2.getText().toString();
-                String filename3 = EditText3.getText().toString();
-                String filename4 = EditText4.getText().toString();
-                String filename5 = EditText5.getText().toString();
-                String filename6 = EditText6.getText().toString();
-                String filename7 = EditText7.getText().toString();
-                String filename8 = EditText8.getText().toString();
-                String filename9 = EditText9.getText().toString();
-                String filename10 = EditText10.getText().toString();
-                String filename11 = EditText11.getText().toString();
-                String filename12 = EditText12.getText().toString();
-
-
-                if (!filename1.equals("") && !filename2.equals("") && !filename3.equals("") && !filename4.equals("")
-                        && !filename5.equals("") && !filename6.equals("") && !filename7.equals("") && !filename8.equals("")
-                        && !filename9.equals("") && !filename10.equals("") && !filename11.equals("") && !filename12.equals("")){
-
-                    saveTextAsFile(filename1, filename2, filename3, filename4 , filename5, filename6,
-                            filename7, filename8, filename9, filename10 , filename11, filename12);
-                }
-            }
-        });
     }
+
+    private void permissinCheck() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1000);
+        }
+    }
+
     private void saveTextAsFile(String filename1, String filename2, String filename3, String filename4, String filename5, String filename6, String filename7, String filename8, String filename9, String filename10, String filename11, String filename12){
         String fileName = filename1 + ".xls";
 
