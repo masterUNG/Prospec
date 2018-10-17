@@ -1,4 +1,13 @@
 <resources>
+
+   <string name="type_doc1_title">ประเภทเอกสารสิทธิ์</string>
+
+
+
+
+
+
+
     <string name="app_name">Prospec</string>
 
     //Spinner activity_land_tab1

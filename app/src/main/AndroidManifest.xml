@@ -16,46 +16,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Bank_GHB.BankActivity" />
-        <activity android:name=".ALL_land_and_building.HomeActivity" />
-        <activity android:name=".ALL_land_and_building.LandsActivity" />
-        <activity android:name=".ALL_land_and_building.LandTab1Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab2Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab3Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab4Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab5Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab6Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab7Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab8Activity" />
-        <activity android:name=".ALL_land_and_building.LandTab9Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingsActivity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab1Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab2Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab3Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab4Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab5Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab6Activity" />
-        <activity android:name=".ALL_land_and_building.BuildingTab7Activity" />
-        <activity android:name=".Bank_GHB.BankGHBActivity" />
-        <activity android:name=".Bank_GHB.BankGHB01Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB03Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB02Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB04Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB05Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB06Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB07Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB08Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB09Activity"/>
-        <activity android:name=".Bank_GHB.BankGHB10Activity">
+        <activity android:name=".Bank_GHB.BankActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab1Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab3Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab4Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab5Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab6Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab7Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab8Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.LandTab9Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab1Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab3Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab4Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab5Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab6Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".ALL_land_and_building.BuildingTab7Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHBActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB01Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB03Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB02Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB04Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB05Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB06Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB07Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB08Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB09Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Bank_GHB.BankGHB10Activity" android:screenOrientation="portrait"/>
 
-        </activity>
     </application>
 
 </manifest>

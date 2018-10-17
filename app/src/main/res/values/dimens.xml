@@ -32,4 +32,8 @@
     <dimen name="height_logo3">90dp</dimen>
 
 
+    <dimen name="h1">24sp</dimen>
+    <dimen name="h2">18sp</dimen>
+
+
 </resources>
