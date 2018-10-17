@@ -47,7 +47,7 @@
                         android:layout_marginLeft="16dp"
                         android:textColorHint="@color/colorPrimaryDark"
                         android:hint="@string/not_null"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 

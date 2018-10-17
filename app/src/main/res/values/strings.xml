@@ -11,6 +11,9 @@
     <string name="num_titledeed">จำนวนเอกสารสิทธิ์</string>
     <string name="unit_titledeed">แปลง</string>
 
+    <string name="ekakasit">เอกสารวิทธิ์</string>
+    <string name="massage_have_space">โปรดกรอกให้ครบทุกช่อง</string>
+    <string name="title_have_space">มีช่องว่าง</string>
 
 
     <string name="app_name">Prospec</string>
