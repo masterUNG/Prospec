@@ -1,17 +1,47 @@
 <resources>
-
+    <!--fragment_form_land-->
     <string name="type_doc_title">ประเภทเอกสารสิทธิ์</string>
     <string name="index_doc">เลขที่เอกสารสิทธิ์</string>
     <string name="num_doc">เลขที่ดิน</string>
-    <string name="rawang">ระวางเลขที่</string>
-    <string name="num_page">หน้าสำรวจ</string>
+    <string name="rawang">ระวาง</string>
     <string name="page">หน้าที่</string>
-    <string name="book_num">เล่ม</string>
     <string name="area">เนื้อที่ดิน</string>
-    <string name="num_titledeed">จำนวนเอกสารสิทธิ์</string>
+    <string name="num_titledeed">จำนวนกลุ่ม</string>
     <string name="unit_titledeed">แปลง</string>
+    <string name="number">กลุ่มที่</string>
+    <string name="number1">ลำดับที่</string>
+    <string name="number2">หน้าสำรวจ</string>
+    <string name="number3">หน้าที่</string>
+    <string name="number4">เล่มที่</string>
+    <string name="number5">จำนวนแปลง</string>
+    <string name="ekasansit1">เอกสารสิทธิ์ที่ตั้งอาคารชุด</string>
+    <string name="not_null">กรอกข้อมูล</string>
 
-    <string name="ekakasit">เอกสารวิทธิ์</string>
+    <!--fragment_form_land2-->
+    <string name="location">ที่ตั้งที่ดิน</string>
+    <string name="location1">ที่ตั้งตามเอกสารสิทธิ์</string>
+    <string name="location2">จังหวัด</string>
+    <string name="location3">อำเภอ</string>
+    <string name="location4">ตำบล</string>
+    <string name="location5">ที่ตั้งตามเขตการปกครอง</string>
+    <string name="location6">หมู่ที่</string>
+    <string name="location7">ชื่อหมู่บ้าน</string>
+    <string name="location8">รหัสไปรษณีย์</string>
+    <string name="location9">ที่ตั้งตามชื่อทำเล</string>
+    <string name="location11">ถนนสายหลัก</string>
+    <string name="location12">ถนนสายรอง</string>
+    <string name="location13">ซอยสาธารณะหลัก</string>
+    <string name="location14">ซอยสาธารณะย่อย</string>
+    <string name="location15">**ที่ตั้งอยู่ในโครงการจัดสรรหรือไม่**</string>
+    <string name="location18">ที่ตั้งตามชื่อทำเล</string>
+    <string name="location19">ชื่อโครงการ</string>
+    <string name="location20">ซอยหลักโครงการ</string>
+    <string name="location21">ซอยย่อยโครงการ</string>
+
+    <string name="location16">ใช่</string>
+    <string name="location17">ไม่ใช่</string>
+
+    <string name="ekakasit">เอกสารสิทธิ์</string>
     <string name="massage_have_space">โปรดกรอกให้ครบทุกช่อง</string>
     <string name="title_have_space">มีช่องว่าง</string>
 
@@ -218,7 +248,7 @@
         <item>วิธีสอบทาน 2</item>
     </string-array>
     <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
-    <string name="not_null">โปรดกรอกข้อมูล</string>
+
 
     //Spinner activity_bank_ghb02
     <string-array name="province">

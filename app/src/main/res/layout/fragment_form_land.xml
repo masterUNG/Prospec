@@ -1,265 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!--Toolbar-->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_land_tab1"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <!--Content-->
     <ScrollView
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
         <!--From-->
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <!--จำนวนเอกสารสิทธิ์-->
+            <!--Tile เอกสารสิทธิ์-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ekakasit"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--กลุ่มที่-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h1"
-                    android:text="@string/num_titledeed"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_titledeed"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
-                <RelativeLayout
+                <!--TextFiled-->
+                <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
 
-                    <!--TextFiled-->
-                    <EditText
-                        android:layout_marginLeft="16dp"
-                        android:textColorHint="@color/colorPrimaryDark"
-                        android:hint="@string/not_null"
-                        android:inputType="number"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+            <!--จำนวนแปลง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
-                    <!--หน่วย-->
-                    <TextView
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/h2"
-                        android:text="@string/unit_titledeed"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number5"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
-                </RelativeLayout>
-
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
             <!--ประเภทเอกสารสิทธิ์-->
             <TextView
-                android:textStyle="bold"
-                android:textSize="@dimen/h2"
-                android:text="@string/type_doc_title"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:text="@string/type_doc_title"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/spinner_type_doc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
-            <!--เลขที่เอกสารสิทธิ์-->
+            <!--Tile เอกสารสิทธิ์ที่ตั้งอาคารชุด-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ekasansit1"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--กลุ่มที่-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/index_doc"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/number"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ลำดับที่่-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number1"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--เลขที่เอกสารสิทธิ์-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_doc"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
                     android:hint="@string/not_null"
                     android:inputType="text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
             <!--เลขที่ดิน-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/num_doc"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_doc"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
-                    android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:hint="@string/not_null"
-                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
 
             </LinearLayout>
 
             <!--ระวาง-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/rawang"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/rawang"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
-                    android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:hint="@string/not_null"
-                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
-            <!--หน้าสพรวจ-->
+            <!--หน้าสำรวจ-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/index_doc"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/number2"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
-                    android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:hint="@string/not_null"
-                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
             <!--หน้าที่-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/num_page"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/number3"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
-                    android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:hint="@string/not_null"
-                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
             <!--เล่มที่-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/book_num"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/number4"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
-                    android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
-                    android:hint="@string/not_null"
-                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
 
             <!--เนื้อที่ดิน-->
             <LinearLayout
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <!--Tile-->
                 <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/h2"
-                    android:text="@string/area"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/area"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
 
                 <!--TextFiled-->
                 <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:textColorHint="@color/colorPrimaryDark"
                     android:hint="@string/not_null"
                     android:inputType="text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
             </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
