@@ -11,4 +11,6 @@ public class MyConstant{
             "อื่นๆ"
     };
 
-}
+
+
+}//Main Class
