@@ -36,8 +36,8 @@ public class LandsActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
-            intent.putExtra("Index",0);
-            startActivity(intent);
+                   intent.putExtra("Index",0);
+                   startActivity(intent);
 
                 }
             });
@@ -45,56 +45,80 @@ public class LandsActivity extends AppCompatActivity {
             button6.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab2Activity.class));
+                   // startActivity(new Intent(LandsActivity.this, LandTab2Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",1);
+                    startActivity(intent);
                 }
             });
 
             button7.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab3Activity.class));
+                    //startActivity(new Intent(LandsActivity.this, LandTab3Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",2);
+                    startActivity(intent);
                 }
             });
 
             button8.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab4Activity.class));
+                    //startActivity(new Intent(LandsActivity.this, LandTab4Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",3);
+                    startActivity(intent);
                 }
             });
 
             button9.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab5Activity.class));
+                    //startActivity(new Intent(LandsActivity.this, LandTab5Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",4);
+                    startActivity(intent);
                 }
             });
 
             button10.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab6Activity.class));
+                    //startActivity(new Intent(LandsActivity.this, LandTab6Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",5);
+                    startActivity(intent);
                 }
             });
 
             button11.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab7Activity.class));
+                   // startActivity(new Intent(LandsActivity.this, LandTab7Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",6);
+                    startActivity(intent);
                 }
             });
 
             button12.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab8Activity.class));
+                   // startActivity(new Intent(LandsActivity.this, LandTab8Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",7);
+                    startActivity(intent);
                 }
             });
 
             button13.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab9Activity.class));
+                   // startActivity(new Intent(LandsActivity.this, LandTab9Activity.class));
+                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    intent.putExtra("Index",8);
+                    startActivity(intent);
                 }
             });
         } // Main Method
