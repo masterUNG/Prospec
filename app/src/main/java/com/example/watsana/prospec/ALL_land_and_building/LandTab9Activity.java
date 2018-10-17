@@ -95,11 +95,11 @@ public class LandTab9Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String filename1 = EditText1.getText().toString();
-                String filename2 = EditText2.getText().toString();
-                String filename3 = EditText3.getText().toString();
-                String filename4 = EditText4.getText().toString();
-                String filename5 = EditText5.getText().toString();
+                String filename1 = EditText1.getText().toString().trim();
+                String filename2 = EditText2.getText().toString().trim();
+                String filename3 = EditText3.getText().toString().trim();
+                String filename4 = EditText4.getText().toString().trim();
+                String filename5 = EditText5.getText().toString().trim();
 
 
                 if (!filename1.equals("") && !filename2.equals("") && !filename3.equals("") && !filename4.equals("") && !filename5.equals("")){

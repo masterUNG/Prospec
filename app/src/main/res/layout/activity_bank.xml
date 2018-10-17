@@ -34,13 +34,12 @@
 
                         <ImageView
                             android:id="@+id/imageView_home"
-                            android:layout_width="215dp"
-                            android:layout_height="95dp"
-                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_logo3"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/logo"
-                            tools:ignore="ContentDescription,RtlHardcoded" />
+                            android:background="@drawable/logo" />
 
                         <TextView
                             android:id="@+id/textView"
@@ -52,9 +51,8 @@
                             android:text="เลือกธนาคารที่ทำการประเมิน"
                             android:textAlignment="center"
                             android:textColor="#24094b"
-                            android:textSize="34dp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage" />
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -76,8 +74,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:orientation="horizontal">
 
                     <!--item1-->
                     <LinearLayout
@@ -90,11 +87,9 @@
                             android:id="@+id/imageView"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="18dp"
+                            android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="25dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/bank1_ghb" />
+                            android:src="@drawable/bank1_ghb"/>
 
                     </LinearLayout>
 
@@ -109,9 +104,8 @@
                             android:id="@+id/imageView1"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="18dp"
+                            android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="25dp"
                             android:src="@drawable/bank1_ghb"
                             android:scaleType="centerInside" />
                     </LinearLayout>
@@ -127,8 +121,8 @@
                             android:id="@+id/imageView2"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:src="@drawable/bank2_gsb"
                             android:scaleType="centerInside" />
                     </LinearLayout>
@@ -144,8 +138,8 @@
                             android:id="@+id/imageView3"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:src="@drawable/bank3_kbank"
                             android:scaleType="centerInside" />
                     </LinearLayout>
@@ -160,20 +154,19 @@
                         <ImageView
                             android:id="@+id/imageView4"
                             android:layout_width="wrap_content"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:src="@drawable/bank4_bay"
                             android:scaleType="centerInside" />
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--Row2-->
+                 <!--Row2-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_weight="1"
@@ -185,9 +178,8 @@
                             android:id="@+id/imageView5"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank5_bbl"
                             android:scaleType="centerInside"/>
                     </LinearLayout>
@@ -202,8 +194,8 @@
                             android:id="@+id/imageView6"
                             android:layout_width="wrap_content"
                             android:layout_height="140dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank6_cimb"
                             android:scaleType="centerInside" />
                     </LinearLayout>
@@ -214,15 +206,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView7"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank7_scb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -231,15 +222,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView8"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="17dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank8_citi"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
@@ -248,15 +238,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView9"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank9_hsbc"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -264,102 +253,86 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank10_baac"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView11"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank11_icbc"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView12"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank12_kk"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView13"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank13_ktb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
-                        <ImageButton
+                        android:orientation="vertical">
+
+                        <ImageView
                             android:id="@+id/imageView14"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank14_lbank"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -367,103 +340,86 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView15"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank15_mhcb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView16"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank16_scbt"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView17"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank17_smbc"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView18"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank18_uob"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView19"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank19_tcrb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -471,67 +427,57 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView20"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank20_tbank"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView21"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank21_tmb"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside"  />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/imageView22"
-                            android:layout_width="100dp"
-                            android:layout_height="135dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@drawable/bank22_tsco"
-                            tools:ignore="ContentDescription,InefficientWeight,RtlHardcoded" />
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

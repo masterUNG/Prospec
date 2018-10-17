@@ -118,26 +118,26 @@ public class BuildingTab3Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String filename1 = EditText1.getText().toString();
-                String filename2 = EditText2.getText().toString();
-                String filename3 = EditText3.getText().toString();
-                String filename4 = EditText4.getText().toString();
-                String filename5 = EditText5.getText().toString();
-                String filename6 = EditText6.getText().toString();
-                String filename7 = EditText7.getText().toString();
-                String filename8 = EditText8.getText().toString();
-                String filename9 = EditText9.getText().toString();
-                String filename10 = EditText10.getText().toString();
-                String filename11 = EditText11.getText().toString();
-                String filename12 = EditText12.getText().toString();
-                String filename13 = EditText13.getText().toString();
-                String filename14 = EditText14.getText().toString();
-                String filename15 = EditText15.getText().toString();
-                String filename16 = EditText16.getText().toString();
-                String filename17 = EditText17.getText().toString();
-                String filename18 = EditText18.getText().toString();
-                String filename19 = EditText19.getText().toString();
-                String filename20 = EditText20.getText().toString();
+                String filename1 = EditText1.getText().toString().trim();
+                String filename2 = EditText2.getText().toString().trim();
+                String filename3 = EditText3.getText().toString().trim();
+                String filename4 = EditText4.getText().toString().trim();
+                String filename5 = EditText5.getText().toString().trim();
+                String filename6 = EditText6.getText().toString().trim();
+                String filename7 = EditText7.getText().toString().trim();
+                String filename8 = EditText8.getText().toString().trim();
+                String filename9 = EditText9.getText().toString().trim();
+                String filename10 = EditText10.getText().toString().trim();
+                String filename11 = EditText11.getText().toString().trim();
+                String filename12 = EditText12.getText().toString().trim();
+                String filename13 = EditText13.getText().toString().trim();
+                String filename14 = EditText14.getText().toString().trim();
+                String filename15 = EditText15.getText().toString().trim();
+                String filename16 = EditText16.getText().toString().trim();
+                String filename17 = EditText17.getText().toString().trim();
+                String filename18 = EditText18.getText().toString().trim();
+                String filename19 = EditText19.getText().toString().trim();
+                String filename20 = EditText20.getText().toString().trim();
 
                 if (!filename1.equals("") && !filename2.equals("") && !filename3.equals("") && !filename4.equals("") && !filename5.equals("")
                         && !filename6.equals("") && !filename7.equals("") && !filename8.equals("") && !filename9.equals("") && !filename10.equals("")
