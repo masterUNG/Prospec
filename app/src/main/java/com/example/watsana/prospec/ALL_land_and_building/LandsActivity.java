@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.watsana.prospec.FormLandActivity;
 import com.example.watsana.prospec.R;
 
 public class LandsActivity extends AppCompatActivity {
@@ -34,7 +35,9 @@ public class LandsActivity extends AppCompatActivity {
             button1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(LandsActivity.this, LandTab1Activity.class));
+                   Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+            intent.putExtra("Index",0);
+            startActivity(intent);
 
                 }
             });

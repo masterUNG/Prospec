@@ -1,10 +1,15 @@
 <resources>
 
-   <string name="type_doc1_title">ประเภทเอกสารสิทธิ์</string>
-
-
-
-
+    <string name="type_doc_title">ประเภทเอกสารสิทธิ์</string>
+    <string name="index_doc">เลขที่เอกสารสิทธิ์</string>
+    <string name="num_doc">เลขที่ดิน</string>
+    <string name="rawang">ระวางเลขที่</string>
+    <string name="num_page">หน้าสำรวจ</string>
+    <string name="page">หน้าที่</string>
+    <string name="book_num">เล่ม</string>
+    <string name="area">เนื้อที่ดิน</string>
+    <string name="num_titledeed">จำนวนเอกสารสิทธิ์</string>
+    <string name="unit_titledeed">แปลง</string>
 
 
 
@@ -210,6 +215,7 @@
         <item>วิธีสอบทาน 2</item>
     </string-array>
     <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
+    <string name="not_null">โปรดกรอกข้อมูล</string>
 
     //Spinner activity_bank_ghb02
     <string-array name="province">
@@ -365,10 +371,10 @@
 
     //Spinner activity_bank_ghb03
     <string-array name="activities">
-    <item>รับเรื่อง</item>
-    <item>นัดหมาย 1</item>
-    <item>นัดหมาย 2</item>
-    <item>นำชี</item>
+        <item>รับเรื่อง</item>
+        <item>นัดหมาย 1</item>
+        <item>นัดหมาย 2</item>
+        <item>นำชี</item>
     </string-array>
 
     <string-array name="proceed">
