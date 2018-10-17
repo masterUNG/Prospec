@@ -13,6 +13,7 @@ public class BuildingsActivity extends AppCompatActivity {
     // Explicit
     private Button button4, button6,button7, button8, button9, button10, button11;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
