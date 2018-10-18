@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Tile ส่วนปรับปรุงที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ส่วนปรับปรุงที่ดิน"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+        <!--ที่ดินพร้อมสิ่งปลูกสร้าง-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+        <!--Tile ที่ดินพร้อมสิ่งปลูกสร้าง-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่ดินพร้อมสิ่งปลูกสร้าง"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อาคาร"
+                android:layout_marginLeft="16dp"
+                android:textSize="@dimen/h2" />
+        </LinearLayout>
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินเปล่า"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--Tile-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินรอการพัฒนา"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินจัดสรร"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/building1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ทำเลที่ตั้งแปลง"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:entries="@array/namelocation" />
+        </LinearLayout>
+
+            <!--Tile ที่ดินใช้ประโยชน์ทางการเกศตร-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!--Tile-->
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่ดินใช้ประโยชน์ทางการเกศตร"
+                android:textStyle="bold"
+                android:textSize="@dimen/h2" />
+
+            <!--TextFiled-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:hint="@string/not_null"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/edit_text" />
+        </LinearLayout>
+
+            <!--Tile ที่ดินรกร้างยังไม่ใช้ประโยชน์-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินรกร้างยังไม่ใช้ประโยชน์"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h2" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ทระดับที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ระดับที่ดิน"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ระดับที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Select-->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ถมแล้ว"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ยังไม่ถม"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ถมบางส่วน"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="**ระดับสูงกว่าหรือต่ำกว่าถนนหน้าที่ดิน (+/-เมตร)**"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+
+            <!--พื้นที่ถม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="พื้นที่ถม"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ถมแล้ว(กี่%)"
+                android:layout_marginLeft="16dp"
+                android:textSize="@dimen/h2" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
