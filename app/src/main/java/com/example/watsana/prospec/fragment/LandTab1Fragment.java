@@ -1,9 +1,11 @@
 package com.example.watsana.prospec.fragment;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -21,6 +24,11 @@ import com.example.watsana.prospec.utility.MyAlert;
 import com.example.watsana.prospec.utility.MyConstant;
 
 public class LandTab1Fragment extends Fragment {
+
+    //    Explicit
+    private boolean spinnerABoolean = true; // true ==> โปรดเลือกประเภท
+    private  String typeDocString;
+    private String[] strings;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -36,14 +44,34 @@ public class LandTab1Fragment extends Fragment {
     }//Main Method
 
     private void createSpinner() {
-        Spinner spinner = getView().findViewById(R.id.spinner_type_doc);
+        final Spinner spinner = getView().findViewById(R.id.spinner_type_doc);
         MyConstant myConstant = new MyConstant();
-        String[] strings = myConstant.getTypeDocStrings();
+        strings = myConstant.getTypeDocStrings();
 
         ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, strings);
 
         spinner.setAdapter(stringArrayAdapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
+
+                if (i == 0) {
+                    spinnerABoolean = true;
+                } else {
+                    spinnerABoolean = false;
+                }
+
+                typeDocString = Integer.toString(i);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     @Override
@@ -96,7 +124,43 @@ public class LandTab1Fragment extends Fragment {
             myAlert.normalDialog(getString(R.string.title_have_space),
             getString(R.string.massage_have_space));
 
-        }
+        }else if(spinnerABoolean) {
+//            position ==> 0
+            MyAlert myAlert = new MyAlert(getActivity());
+            myAlert.normalDialog(getString(R.string.title_type_doc1),getString(R.string.message_type_doc1));
+
+        }else {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setCancelable(false);
+            builder.setIcon(R.drawable.ic_action_alert);
+            builder.setTitle(R.string.title_comfirm);
+            builder.setMessage(getString(R.string.num_titledeed)+ "=" +string1+ "\n" +
+                    getString(R.string.number5)+ "=" +string2+ "\n" +
+                    getString(R.string.type_doc_title)+ "=" + strings [Integer.parseInt(typeDocString)] + "\n" +
+                    getString(R.string.number)+ "=" +string3+ "\n" +
+                    getString(R.string.number1)+ "=" +string4+ "\n" +
+                    getString(R.string.index_doc)+ "=" +string5+ "\n" +
+                    getString(R.string.rawang)+ "=" +string7+ "\n" +
+                    getString(R.string.number2)+ "=" +string8+ "\n" +
+                    getString(R.string.number3)+ "=" +string9+ "\n" +
+                    getString(R.string.number4)+ "=" +string10+ "\n" +
+                    getString(R.string.area)+ "=" +string11);
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.show();
+
+        }//if
 
     }//checkData
 

@@ -248,6 +248,9 @@
         <item>วิธีสอบทาน 2</item>
     </string-array>
     <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
+    <string name="title_type_doc1">ยังไม่เลือก ประเภทเอกสารสิทธิ์</string>
+    <string name="message_type_doc1">กรุณา เลือกชนิดประเภทเอกสารสิทธิ์</string>
+    <string name="title_comfirm">โปรดใส่ข้อมูล</string>
 
 
     //Spinner activity_bank_ghb02
