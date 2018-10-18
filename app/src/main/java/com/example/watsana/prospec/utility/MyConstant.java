@@ -11,6 +11,12 @@ public class MyConstant{
             "อื่นๆ"
     };
 
+//    Getter
 
+
+    public String[] getTypeDocStrings() {
+        return typeDocStrings;
+    }
 
 }//Main Class
+
