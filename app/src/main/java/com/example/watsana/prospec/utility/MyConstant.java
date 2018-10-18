@@ -1,6 +1,12 @@
 package com.example.watsana.prospec.utility;
 
 public class MyConstant{
+
+    //    URL
+    private String urlAddsp_mainString = "http://swiftcodingthai.com/pro/addDataWad2.php";
+
+
+//    Array
     private String[] typeDocStrings = new String[]{
             "โปรดเลือกประเภท",
             "โฉลดที่ดิน",
@@ -13,6 +19,10 @@ public class MyConstant{
 
 //    Getter
 
+
+    public String getUrlAddsp_mainString() {
+        return urlAddsp_mainString;
+    }
 
     public String[] getTypeDocStrings() {
         return typeDocStrings;
