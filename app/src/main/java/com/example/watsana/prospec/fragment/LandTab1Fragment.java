@@ -1,8 +1,10 @@
 package com.example.watsana.prospec.fragment;
 
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -32,12 +34,18 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import it.sauronsoftware.ftp4j.FTPClient;
+import it.sauronsoftware.ftp4j.FTPDataTransferListener;
+
 public class LandTab1Fragment extends Fragment {
 
     //    Explicit
     private boolean spinnerABoolean = true; // true ==> โปรดเลือกประเภท
     private  String typeDocString;
     private String[] strings;
+    private Uri uri;
+    private  FTPClient ftpClient;
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -51,6 +59,40 @@ public class LandTab1Fragment extends Fragment {
 
 
     }//Main Method
+
+    public class uploadListener implements FTPDataTransferListener{
+
+
+        @Override
+        public void started() {
+            Toast.makeText(getActivity(),"Start Upload",Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void transferred(int i) {
+            Toast.makeText(getActivity(),"Continue Upload",Toast.LENGTH_SHORT).show();
+
+        }
+
+        @Override
+        public void completed() {
+            Toast.makeText(getActivity(),"Success Upload",Toast.LENGTH_SHORT).show();
+
+        }
+
+        @Override
+        public void aborted() {
+
+        }
+
+        @Override
+        public void failed() {
+            Toast.makeText(getActivity(),"False Upload",Toast.LENGTH_SHORT).show();
+
+        }
+    }//upload class
+
+
 
     private void createSpinner() {
         final Spinner spinner = getView().findViewById(R.id.spinner_type_doc);
@@ -240,10 +282,39 @@ public class LandTab1Fragment extends Fragment {
             Toast.makeText(getActivity(), "Create File Xls Success",
                     Toast.LENGTH_SHORT).show();
 
+            uri = Uri.fromFile(xlsFile);
+            String pathString = uri.getPath();
+            Log.d("19octV2", "pathString==>" + pathString);
+
+//            Change Policy
+
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy
+                    .Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+
+            ftpClient = new FTPClient();
+            MyConstant myConstant = new MyConstant();
+
+            ftpClient.connect(myConstant.getHostString(), myConstant.getPostAnInt());
+            ftpClient.login(myConstant.getHostString(),myConstant.getPasswordString());
+            ftpClient.setType(FTPClient.TYPE_BINARY);
+            ftpClient.changeDirectory("Wad");
+            ftpClient.upload(xlsFile, new uploadListener());
+
         } catch (FileNotFoundException e) {
             Log.d("19octV2", "e File==>" + e.toString());
         } catch (IOException e) {
             Log.d("19octV2", "e IO==>" + e.toString());
+        } catch (Exception e) {
+
+            try {
+
+              ftpClient.disconnect(true);
+
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+
         }
 
 

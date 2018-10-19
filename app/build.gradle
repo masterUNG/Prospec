@@ -30,4 +30,5 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
     implementation 'com.squareup.okhttp:okhttp:2.0.0'
+    implementation files('libs/ftp4j-1.7.2.jar')
 }
