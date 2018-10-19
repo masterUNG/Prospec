@@ -175,6 +175,8 @@ public class LandTab1Fragment extends Fragment {
                                     string8, string9, string10, string11, typeDocString);
                         } else {
 
+                            MyAlert myAlert = new MyAlert(getActivity());
+                            myAlert.normalDialog("Cannot Upload","Please Try again Cannot Upload");
                         }
 
 
@@ -194,6 +196,8 @@ public class LandTab1Fragment extends Fragment {
                                String string4, String string5, String string6,
                                String string7, String string8, String string9,
                                String string10, String string11, String typeDocString) {
+
+
 
     }
 
