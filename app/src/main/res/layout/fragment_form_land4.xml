@@ -20,6 +20,7 @@
 
         <!--From-->
         <LinearLayout
+            android:paddingBottom="50dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -28,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ภาระผูกพันตามสภาพทรัพย์สิน"
+                android:text="@string/paraputpun1"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold" />
 
@@ -41,6 +42,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -49,6 +51,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -67,6 +70,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -75,6 +79,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -93,6 +98,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -100,6 +106,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -118,6 +125,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -125,6 +133,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -143,6 +152,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -150,6 +160,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -168,6 +179,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -175,6 +187,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -193,6 +206,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -200,6 +214,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -218,6 +233,7 @@
 
                 <!--Select-->
                 <CheckBox
+                    android:id="@+id/checkbox8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/h2"
@@ -225,6 +241,7 @@
 
                 <!--TextFiled-->
                 <EditText
+                    android:id="@+id/EditText8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"

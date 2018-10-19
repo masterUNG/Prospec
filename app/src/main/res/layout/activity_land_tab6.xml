@@ -324,7 +324,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:text="สัญญาณโทรศัพท์เคลื่อนที่"
+                android:text="ท่อระบายน้ำ"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
@@ -369,7 +369,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:text="สัญญาณโทรศัพท์เคลื่อนที่"
+                android:text="ไฟฟ้าส่องสว่าง"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />

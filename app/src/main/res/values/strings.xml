@@ -38,6 +38,122 @@
     <string name="location20">ซอยหลักโครงการ</string>
     <string name="location21">ซอยย่อยโครงการ</string>
 
+    <!--fragment_form_land3-->
+    <string name="kammasit1">กรรมสิทธิ์และภาระผูกพัน</string>
+    <string name="kammasit2">รูปแบบกรรมสิทธิ์</string>
+    <string name="kammasit3">ผู้ถือกรรมสิทธิ์</string>
+    <string name="kammasit4">ภาระหนี้</string>
+    <string name="kammasit5">ต้องตรวจสอบหรือไม่</string>
+    <string name="kammasit6">ภาระจำนอง</string>
+    <string name="kammasit7">ประเภทภาระหนี้</string>
+    <string name="kammasit8">เจ้าหนี้จำนอง</string>
+    <string name="kammasit9">วงเงินจำนอง</string>
+    <string name="kammasit10">ขายฝาก</string>
+    <string name="kammasit11">ประเภทภาระหนี้</string>
+    <string name="kammasit12">ผู้รับขายฝาก</string>
+    <string name="kammasit13">วันกำหนดไถ่ถอน</string>
+    <string name="kammasit14">ภาระผูกพันตามเอกสารสิทธิ์</string>
+    <string name="kammasit15">ต้องตรวจสอบหรือไม่</string>
+    <string name="kammasit16">การตรวจสอบอายัด</string>
+
+    <!--fragment_form_land4-->
+    <string name="paraputpun1">ภาระผูกพันตามสภาพทรัพย์สิน</string>
+
+    <!--fragment_form_land5-->
+    <string name="pubpung1">ส่วนปรับปรุงที่ดิน</string>
+    <string name="pubpung2">ที่ดินพร้อมสิ่งปลูกสร้าง</string>
+    <string name="pubpung3">ที่ดินเปล่า</string>
+    <string name="pubpung4">ทำเลที่ตั้งแปลง</string>
+    <string name="pubpung5">ระดับที่ดิน</string>
+    <string name="pubpung6">**ระดับสูงกว่าหรือต่ำกว่าถนนหน้าที่ดิน (+/-เมตร)**</string>
+    <string name="pubpung7">พื้นที่ถม</string>
+    <string name="pubpung8">ถมแล้ว(กี่%)</string>
+    <string name="pubpung9">พื้นที่ถม</string>
+    <string name="pubpung10">ยังไม่ถม(กี่%)</string>
+    <string name="pubpung11">ผลรวม</string>
+    <string name="pubpung12">เฉลี่ย</string>
+    <string name="pubpung13">ถมแล้ว</string>
+    <string name="pubpung14">ยังไม่ถม</string>
+    <string name="pubpung15">พื้นที่ถม</string>
+    <string name="pubpung16">ระดับดิน</string>
+
+    <!--fragment_form_land6-->
+    <string name="rabob1">ระบบสาธารณูปโภค</string>
+    <string name="rabob2">ระบบสาธารณูปโภคพื้นฐาน</string>
+    <string name="rabob3">ระบบไฟฟ้า</string>
+    <string name="rabob4">ระบบประปา</string>
+    <string name="rabob5">ระบบโทรศัพท์พื้นฐาน</string>
+    <string name="rabob6">สัญญาณโทรศัพท์เคลื่อนที่</string>
+    <string name="rabob7">ท่อระบายน้ำ</string>
+    <string name="rabob8">มีไฟฟ้าส่องสว่าง</string>
+    <string name="rabob9">ทางเข้าออกไปสู่ที่ดิน</string>
+    <string name="rabob10">ถนนสายหลัก</string>
+    <string name="rabob11">จุดเริ่มต้น</string>
+    <string name="rabob12">ถนนผ่านหน้าที่ดิน</string>
+    <string name="rabob13">ถนนสายรอง</string>
+    <string name="rabob14">ซอยสาธารณะหลัก</string>
+    <string name="rabob15">ซอยสาธารณะย่อย</string>
+
+    <!--fragment_form_land7-->
+    <string name="roobrang1">รูปร่างที่ดินและสภาพแวดล้อม</string>
+    <string name="roobrang2">สภาพแวดล้อมโดยรอบที่ดิน</string>
+    <string name="roobrang3">รูปร่างที่ดิน</string>
+    <string name="roobrang4">สถานที่สำคัญใกกล้เคียง(สถานทีอ้างอิงหลักอยู่อันดับแรก)</string>
+    <string name="roobrang5">ระยะห่าง</string>
+    <string name="roobrang6">เมตร</string>
+
+    <!--fragment_form_land8-->
+    <string name="laws1">ข้อกฎหมายที่เกี่ยวข้อง</string>
+    <string name="laws2">กฎหมายผังเมือง</string>
+    <string name="laws3">กฎหมายผังเมือง</string>
+    <string name="laws4">ประเภท ที่อยู่อาศัยหนาแน่นน้อย</string>
+    <string name="laws5">ประเภท ที่อยู่อาศัยหนาแน่นปานกลาง</string>
+    <string name="laws6">ประเภท ที่อยู่อาศัยหนาแน่นมาก</string>
+    <string name="laws7">ประเภท พาณิชยกรรมและที่อยู่อาศัยหนาแน่นมาก</string>
+    <string name="laws8">ประเภท อุตสาหกรรมและคลังสินค้า</string>
+    <string name="laws9">ประเภท คลังสินค้า</string>
+    <string name="laws10">ประเภท อุตสาหกรรมที่ไม่เป็นพิษต่อชุมชนและคลังสินค้า</string>
+    <string name="laws11">ประเภท ชนบทและเกษตรกรรม</string>
+    <string name="laws12">ประเภท อนุรักษ์ชนบทและเกษตรกรรม</string>
+    <string name="laws13">ประเภท ที่โล่งเพื่อนันทนาการและการรักษาคุณภาพสิ่งแวดล้อม</string>
+    <string name="laws14">ประเภท ที่โล่งเพื่อนันทนาการและการรักษาคุณภาพสิ่งแวดล้อม</string>
+    <string name="laws15">ประเภท สถาบันการศึกษา</string>
+    <string name="laws16">ประเภท สถาบันศาสนา</string>
+    <string name="laws17">สถาบันราชการ การสาธารณูปโภคและสาธารณูปการ</string>
+    <string name="laws18">ประเภท ชุมชนที่อยูอาศัย</string>
+    <string name="laws19">บล็อคเลขที่</string>
+    <string name="laws20">โครงการเวณคืน</string>
+    <string name="laws21">แนวสายไฟฟ้าแรงสูง</string>
+    <string name="laws22">แนวรถไฟฟ้าใต้ดิน</string>
+    <string name="laws23">เขตป่าไม้</string>
+    <string name="laws24">อยู่ในเขตเทศบาล</string>
+    <string name="laws25">อื่นๆ</string>
+
+    <!--fragment_form_land9-->
+    <string name="check1">การตรวจตำแหน่งที่ดิน</string>
+    <string name="check2">ตรวจเอกสารสำนักงานที่ดิน</string>
+    <string name="check3">เอกสารที่สำนักงานที่ดิน</string>
+    <string name="check4">เอกสารสิทธิ์ฉบับกรมที่ดิน</string>
+    <string name="check5">สัญญาขาย</string>
+    <string name="check6">สัญญาให้</string>
+    <string name="check7">สัญญาจำนอง</string>
+    <string name="check8">แผนที่ระวาง</string>
+    <string name="check9">*กรณี ตรวจสอบได้</string>
+    <string name="check10">การตรวจสอบตำแหน่งที่ดิน</string>
+    <string name="check11">แปลงคงเหลือ</string>
+    <string name="check12">บันทึกอายัด</string>
+    <string name="check13">บันทึกภาระจำยอม</string>
+    <string name="check14">อื่นๆ</string>
+    <string name="check15">วิธีการนำชี้ที่ตั้ง</string>
+    <string name="check16">นำชี้โดยบุคคล</string>
+    <string name="check17">ชื่อ</string>
+    <string name="check18">ความเกี่ยวพัน</string>
+    <string name="check19">เลขที่บัตรประชาชน</string>
+    <string name="check20">นำชี้โดยเอกสาร</string>
+    <string name="check21">เอกสารประกอบการนำชี้แทน</string>
+
+
+
     <string name="location16">ใช่</string>
     <string name="location17">ไม่ใช่</string>
 
@@ -45,10 +161,15 @@
     <string name="massage_have_space">โปรดกรอกให้ครบทุกช่อง</string>
     <string name="title_have_space">มีช่องว่าง</string>
 
+    <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
+    <string name="title_type_doc1">ยังไม่เลือก ประเภทเอกสารสิทธิ์</string>
+    <string name="message_type_doc1">กรุณา เลือกชนิดประเภทเอกสารสิทธิ์</string>
+    <string name="title_comfirm">โปรดใส่ข้อมูล</string>
 
     <string name="app_name">Prospec</string>
 
-    //Spinner activity_land_tab1
+
+    <!--Spinner activity_land_tab1-->
     <string-array name="category">
         <item>โฉนดที่ดิน</item>
         <item>โฉนดตราจอง</item>
@@ -57,18 +178,18 @@
         <item>อื่นๆ</item>
     </string-array>
 
-    //Checkbox activity_land_tab2
+    <!--Checkbox activity_land_tab2-->
     <string name="title_activity_land_tab2"></string>
     <string name="yes">ใช่</string>
     <string name="no">ไม่ใช่</string>
 
-    //Spinner activity_land_tab3
+    <!--Spinner activity_land_tab3-->
     <string-array name="category1">
         <item>จำนอง</item>
         <item>ขายฝาก</item>
     </string-array>
 
-    //Spinner activity_land_tab5
+    <!--Spinner activity_land_tab5-->
     <string-array name="building1">
         <item>เพื่อการอยู่อาศัย</item>
         <item>เพื่อการอุตสาหกรรม</item>
@@ -81,7 +202,7 @@
         <item>กลาง</item>
     </string-array>
 
-    //Spinner activity_land_tab6
+    <!--Spinner activity_land_tab6-->
     <string-array name="electricity">
         <item>พาดเสาบนดิน</item>
         <item>เดินท่อใต้ดิน</item>
@@ -93,7 +214,7 @@
         <item>ระบบประปาชุมชน</item>
     </string-array>
 
-    //Spinner activity_land_tab9
+    <!--Spinner activity_land_tab9-->
     <string-array name="location">
         <item>แผนที่ระวาง</item>
         <item>แปลงคงเหลือ</item>
@@ -103,7 +224,7 @@
         <item>ไม่สามารถตรวจสอบได้</item>
     </string-array>
 
-    //Spinner activity_building_tab1
+    <!--Spinner activity_building_tab1-->
     <string-array name="names">
         <item>บ้านเดี่ยว</item>
         <item>บ้านแฝด</item>
@@ -151,7 +272,7 @@
         <item>อื่นๆ</item>
     </string-array>
 
-    //Spinner activity_building_tab2
+    <!--Spinner activity_building_tab2-->
     <string-array name="base">
         <item>เสาเข็มเจาะ</item>
         <item>เสาเข็มตอก</item>
@@ -226,7 +347,7 @@
         <item>ไม่สามารถตรวจสอบ</item>
     </string-array>
 
-    //Spinner activity_building_tab6
+    <!--Spinner activity_building_tab6-->
     <string-array name="floor">
         <item>พื้นที่ภายในอาคาร</item>
         <item>พื้นที่ส่วนโล่งหลังคาคลุม</item>
@@ -241,19 +362,14 @@
         <item>พื้นที่ประตูทางเข้า</item>
     </string-array>
 
-    //Spinner activity_building_tab7
+    <!--Spinner activity_building_tab7-->
     <string-array name="number">
         <item>วิธีหลัก</item>
         <item>วิธีสอบทาน 1</item>
         <item>วิธีสอบทาน 2</item>
     </string-array>
-    <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
-    <string name="title_type_doc1">ยังไม่เลือก ประเภทเอกสารสิทธิ์</string>
-    <string name="message_type_doc1">กรุณา เลือกชนิดประเภทเอกสารสิทธิ์</string>
-    <string name="title_comfirm">โปรดใส่ข้อมูล</string>
 
-
-    //Spinner activity_bank_ghb02
+    <!--Spinner activity_bank_ghb02-->
     <string-array name="province">
         <item>กระบี่</item>
         <item>กรุงเทพมหานคร</item>
@@ -391,7 +507,7 @@
         <item>Backtest</item>
     </string-array>
 
-    //Spinner activity_bank_ghb02, activity_bank_ghb03
+    <!--Spinner activity_bank_ghb02, activity_bank_ghb03-->
     <string-array name="category_ghb">
         <item>ซื้อที่ดินอาคาร</item>
         <item>ซื้อที่ดินปลูกสร้าง</item>
@@ -405,7 +521,7 @@
         <item>โครงการแฟลต</item>
     </string-array>
 
-    //Spinner activity_bank_ghb03
+    <!--Spinner activity_bank_ghb03-->
     <string-array name="activities">
         <item>รับเรื่อง</item>
         <item>นัดหมาย 1</item>
@@ -420,7 +536,7 @@
         <item>นำชี</item>
     </string-array>
 
-    //Spinner activity_bank_ghb04
+    <!--Spinner activity_bank_ghb04-->
     <string-array name="category_ghb01">
         <item>โฉนดที่ดิน</item>
         <item>โฉนดตราจอง</item>
@@ -430,7 +546,7 @@
         <item>อื่นๆ</item>
     </string-array>
 
-    //Spinner activity_bank_ghb05
+    <!--Spinner activity_bank_ghb05-->
     <string-array name="investigate">
         <item>แปลงคง</item>
         <item>ระวางแผนที่</item>
