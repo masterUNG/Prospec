@@ -41,11 +41,10 @@ public class LandTab1Fragment extends Fragment {
 
     //    Explicit
     private boolean spinnerABoolean = true; // true ==> โปรดเลือกประเภท
-    private  String typeDocString;
+    private String typeDocString;
     private String[] strings;
     private Uri uri;
-    private  FTPClient ftpClient;
-
+    private FTPClient ftpClient;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -60,24 +59,25 @@ public class LandTab1Fragment extends Fragment {
 
     }//Main Method
 
-    public class uploadListener implements FTPDataTransferListener{
+    public class uploadListener implements FTPDataTransferListener {
 
 
         @Override
         public void started() {
-            Toast.makeText(getActivity(),"Start Upload",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Start Upload", Toast.LENGTH_SHORT)
+                    .show();
         }
 
         @Override
         public void transferred(int i) {
-            Toast.makeText(getActivity(),"Continue Upload",Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(getActivity(), "Continue Upload", Toast.LENGTH_SHORT)
+                    .show();
         }
 
         @Override
         public void completed() {
-            Toast.makeText(getActivity(),"Success Upload",Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(getActivity(), "Success Upload", Toast.LENGTH_SHORT)
+                    .show();
         }
 
         @Override
@@ -87,10 +87,12 @@ public class LandTab1Fragment extends Fragment {
 
         @Override
         public void failed() {
-            Toast.makeText(getActivity(),"False Upload",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "False Upload", Toast.LENGTH_SHORT)
+                    .show();
 
         }
-    }//upload class
+    }   // uploadListener Class
+
 
 
 
@@ -173,30 +175,30 @@ public class LandTab1Fragment extends Fragment {
 //            Have Space
             MyAlert myAlert = new MyAlert(getActivity());
             myAlert.normalDialog(getString(R.string.title_have_space),
-            getString(R.string.massage_have_space));
+                    getString(R.string.massage_have_space));
 
-        }else if(spinnerABoolean) {
+        } else if (spinnerABoolean) {
 //            position ==> 0
             MyAlert myAlert = new MyAlert(getActivity());
-            myAlert.normalDialog(getString(R.string.title_type_doc1),getString(R.string.message_type_doc1));
+            myAlert.normalDialog(getString(R.string.title_type_doc1), getString(R.string.message_type_doc1));
 
-        }else {
+        } else {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setCancelable(false);
             builder.setIcon(R.drawable.ic_action_alert);
             builder.setTitle(R.string.title_comfirm);
-            builder.setMessage(getString(R.string.num_titledeed)+ "=" +string1+ "\n" +
-                    getString(R.string.number5)+ "=" +string2+ "\n" +
-                    getString(R.string.type_doc_title)+ "=" + strings [Integer.parseInt(typeDocString)] + "\n" +
-                    getString(R.string.number)+ "=" +string3+ "\n" +
-                    getString(R.string.number1)+ "=" +string4+ "\n" +
-                    getString(R.string.index_doc)+ "=" +string5+ "\n" +
-                    getString(R.string.rawang)+ "=" +string7+ "\n" +
-                    getString(R.string.number2)+ "=" +string8+ "\n" +
-                    getString(R.string.number3)+ "=" +string9+ "\n" +
-                    getString(R.string.number4)+ "=" +string10+ "\n" +
-                    getString(R.string.area)+ "=" +string11);
+            builder.setMessage(getString(R.string.num_titledeed) + "=" + string1 + "\n" +
+                    getString(R.string.number5) + "=" + string2 + "\n" +
+                    getString(R.string.type_doc_title) + "=" + strings[Integer.parseInt(typeDocString)] + "\n" +
+                    getString(R.string.number) + "=" + string3 + "\n" +
+                    getString(R.string.number1) + "=" + string4 + "\n" +
+                    getString(R.string.index_doc) + "=" + string5 + "\n" +
+                    getString(R.string.rawang) + "=" + string7 + "\n" +
+                    getString(R.string.number2) + "=" + string8 + "\n" +
+                    getString(R.string.number3) + "=" + string9 + "\n" +
+                    getString(R.string.number4) + "=" + string10 + "\n" +
+                    getString(R.string.area) + "=" + string11);
             builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -211,27 +213,33 @@ public class LandTab1Fragment extends Fragment {
 
                         MyConstant myConstant = new MyConstant();
                         AddSpMain addSpMain = new AddSpMain(getActivity());
-                        addSpMain.execute(string1, string2,string3, string4, string5, string6, string7,
-                                string8, string9, string10, string11, typeDocString,
+                        addSpMain.execute(string1, string2, string3, string4,
+                                string5, string6, string7, string8, string9
+                                , string10, string11, typeDocString,
                                 myConstant.getUrlAddsp_mainString());
 
                         String resultString = addSpMain.get();
-                        Log.d("19octV1", "result ==>" + resultString);
+                        Log.d("19octV1", "result ==> " + resultString);
 
                         if (Boolean.parseBoolean(resultString)) {
 
-                            uploadFileXls(string1, string2,string3, string4, string5, string6, string7,
-                                    string8, string9, string10, string11, typeDocString);
+                            uploadFileXls(string1, string2, string3, string4,
+                                    string5, string6, string7, string8, string9
+                                    , string10, string11, typeDocString);
+
+
                         } else {
 
                             MyAlert myAlert = new MyAlert(getActivity());
-                            myAlert.normalDialog("Cannot Upload","Please Try again Cannot Upload");
+                            myAlert.normalDialog("Cannot Upload",
+                                    "Please Try again Cannot Upload");
                         }
 
 
                     } catch (Exception e) {
-                        Log.d("19octV1","e ==>" +e.toString());
+                        Log.d("19octV1", "e ==> " + e.toString());
                     }
+
                     dialog.dismiss();
                 }
             });
@@ -246,7 +254,7 @@ public class LandTab1Fragment extends Fragment {
                                String string7, String string8, String string9,
                                String string10, String string11, String typeDocString) {
 
-        String nameFileString = "Wad_"+string1+ ".xls";
+        String nameFileString = "master_" + string1 + ".xls";
 
         File xlsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), nameFileString);
 
@@ -284,10 +292,9 @@ public class LandTab1Fragment extends Fragment {
 
             uri = Uri.fromFile(xlsFile);
             String pathString = uri.getPath();
-            Log.d("19octV2", "pathString==>" + pathString);
+            Log.d("19octV2", "pathString ==> " + pathString);
 
 //            Change Policy
-
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy
                     .Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
@@ -296,20 +303,22 @@ public class LandTab1Fragment extends Fragment {
             MyConstant myConstant = new MyConstant();
 
             ftpClient.connect(myConstant.getHostString(), myConstant.getPostAnInt());
-            ftpClient.login(myConstant.getHostString(),myConstant.getPasswordString());
+            ftpClient.login(myConstant.getUserString(), myConstant.getPasswordString());
             ftpClient.setType(FTPClient.TYPE_BINARY);
             ftpClient.changeDirectory("Wad");
             ftpClient.upload(xlsFile, new uploadListener());
 
+
+
         } catch (FileNotFoundException e) {
-            Log.d("19octV2", "e File==>" + e.toString());
+            Log.d("19octV2", "e File ==> " + e.toString());
         } catch (IOException e) {
-            Log.d("19octV2", "e IO==>" + e.toString());
+            Log.d("19octV2", "e IO ==> " + e.toString());
         } catch (Exception e) {
 
             try {
 
-              ftpClient.disconnect(true);
+                ftpClient.disconnect(true);
 
             } catch (Exception e1) {
                 e1.printStackTrace();
@@ -318,20 +327,20 @@ public class LandTab1Fragment extends Fragment {
         }
 
 
-    }//upload
+    }   // upload
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
 
 
-        inflater.inflate(R.menu.menu_land_tab,menu);
+        inflater.inflate(R.menu.menu_land_tab, menu);
     }
 
     private void creteToolbar() {
 
         Toolbar toolbar = getView().findViewById(R.id.toolbar_land_tab1);
-        ((FormLandActivity)getActivity()).setSupportActionBar(toolbar);
+        ((FormLandActivity) getActivity()).setSupportActionBar(toolbar);
         ((FormLandActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.ekakasit));
         ((FormLandActivity) getActivity()).getSupportActionBar().setSubtitle(getString(R.string.massage_have_space));
 
