@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,6 +21,7 @@ import android.widget.Spinner;
 
 import com.example.watsana.prospec.FormLandActivity;
 import com.example.watsana.prospec.R;
+import com.example.watsana.prospec.utility.AddSpMain;
 import com.example.watsana.prospec.utility.MyAlert;
 import com.example.watsana.prospec.utility.MyConstant;
 
@@ -103,17 +105,17 @@ public class LandTab1Fragment extends Fragment {
         EditText editText11 = getView().findViewById(R.id.EditText11);
 
 
-        String string1 = editText1.getText().toString().trim();
-        String string2 = editText2.getText().toString().trim();
-        String string3 = editText3.getText().toString().trim();
-        String string4 = editText4.getText().toString().trim();
-        String string5 = editText5.getText().toString().trim();
-        String string6 = editText6.getText().toString().trim();
-        String string7 = editText7.getText().toString().trim();
-        String string8 = editText8.getText().toString().trim();
-        String string9 = editText9.getText().toString().trim();
-        String string10 = editText10.getText().toString().trim();
-        String string11 = editText11.getText().toString().trim();
+        final String string1 = editText1.getText().toString().trim();
+        final String string2 = editText2.getText().toString().trim();
+        final String string3 = editText3.getText().toString().trim();
+        final String string4 = editText4.getText().toString().trim();
+        final String string5 = editText5.getText().toString().trim();
+        final String string6 = editText6.getText().toString().trim();
+        final String string7 = editText7.getText().toString().trim();
+        final String string8 = editText8.getText().toString().trim();
+        final String string9 = editText9.getText().toString().trim();
+        final String string10 = editText10.getText().toString().trim();
+        final String string11 = editText11.getText().toString().trim();
 
         if (string1.isEmpty() || string2.isEmpty() || string3.isEmpty() || string4.isEmpty() ||
                 string5.isEmpty() || string6.isEmpty() || string7.isEmpty() || string8.isEmpty() ||
@@ -155,6 +157,22 @@ public class LandTab1Fragment extends Fragment {
             builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+
+                    try {
+
+                        MyConstant myConstant = new MyConstant();
+                        AddSpMain addSpMain = new AddSpMain(getActivity());
+                        addSpMain.execute(string1, string2,string3, string4, string5, string6, string7,
+                                string8, string9, string10, string11, typeDocString,
+                                myConstant.getUrlAddsp_mainString());
+
+                        String resultString = addSpMain.get();
+                        Log.d("19octV1", "result ==>" + resultString);
+
+
+                    } catch (Exception e) {
+                        Log.d("19octV1","e ==>" +e.toString());
+                    }
                     dialog.dismiss();
                 }
             });

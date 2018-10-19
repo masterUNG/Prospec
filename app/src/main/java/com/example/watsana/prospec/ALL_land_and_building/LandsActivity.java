@@ -46,7 +46,7 @@ public class LandsActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                    // startActivity(new Intent(LandsActivity.this, LandTab2Activity.class));
-                    Intent intent = new Intent(LandsActivity.this, FormLandActivity.class);
+                    Intent intent = new Intent(LandsActivity.this, LandTab2Activity.class);
                     intent.putExtra("Index",1);
                     startActivity(intent);
                 }
