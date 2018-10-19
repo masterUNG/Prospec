@@ -2,6 +2,7 @@ package com.example.watsana.prospec.fragment;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,12 +19,18 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.watsana.prospec.FormLandActivity;
 import com.example.watsana.prospec.R;
 import com.example.watsana.prospec.utility.AddSpMain;
 import com.example.watsana.prospec.utility.MyAlert;
 import com.example.watsana.prospec.utility.MyConstant;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class LandTab1Fragment extends Fragment {
 
@@ -197,9 +204,50 @@ public class LandTab1Fragment extends Fragment {
                                String string7, String string8, String string9,
                                String string10, String string11, String typeDocString) {
 
+        String nameFileString = "Wad_"+string1+ ".xls";
+
+        File xlsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), nameFileString);
+
+        try {
+
+            FileOutputStream fileOutputStream = new FileOutputStream(xlsFile);
+            fileOutputStream.write(string1.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string2.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string3.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string4.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string5.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string6.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string7.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string8.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string9.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string10.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(string11.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.write(typeDocString.getBytes());
+            fileOutputStream.write("\n".getBytes());
+            fileOutputStream.close();
+
+            Toast.makeText(getActivity(), "Create File Xls Success",
+                    Toast.LENGTH_SHORT).show();
+
+        } catch (FileNotFoundException e) {
+            Log.d("19octV2", "e File==>" + e.toString());
+        } catch (IOException e) {
+            Log.d("19octV2", "e IO==>" + e.toString());
+        }
 
 
-    }
+    }//upload
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
