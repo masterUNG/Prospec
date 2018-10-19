@@ -169,6 +169,14 @@ public class LandTab1Fragment extends Fragment {
                         String resultString = addSpMain.get();
                         Log.d("19octV1", "result ==>" + resultString);
 
+                        if (Boolean.parseBoolean(resultString)) {
+
+                            uploadFileXls(string1, string2,string3, string4, string5, string6, string7,
+                                    string8, string9, string10, string11, typeDocString);
+                        } else {
+
+                        }
+
 
                     } catch (Exception e) {
                         Log.d("19octV1","e ==>" +e.toString());
@@ -181,6 +189,13 @@ public class LandTab1Fragment extends Fragment {
         }//if
 
     }//checkData
+
+    private void uploadFileXls(String string1, String string2, String string3,
+                               String string4, String string5, String string6,
+                               String string7, String string8, String string9,
+                               String string10, String string11, String typeDocString) {
+
+    }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
