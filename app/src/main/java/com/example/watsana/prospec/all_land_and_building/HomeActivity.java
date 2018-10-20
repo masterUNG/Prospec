@@ -13,11 +13,14 @@ public class HomeActivity extends AppCompatActivity {
 
     // Explicit
     private Button button, button1;
+    private String loginNameString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        loginNameString = getIntent().getStringExtra("LoginUser");
 
         //Bind Wiget
         button = (Button) findViewById(R.id.button);

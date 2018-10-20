@@ -11,11 +11,14 @@ import com.example.watsana.prospec.R;
 
 public class BankActivity extends AppCompatActivity {
     ImageView imageView, imageView1;
+    private String myNameLoginString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank);
+
+        myNameLoginString = "MasterUNG";
 
         imageView =  findViewById(R.id.imageView);
         imageView1 =  findViewById(R.id.imageView1);
@@ -24,7 +27,10 @@ public class BankActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BankActivity.this, HomeActivity.class));
+
+                Intent intent = new Intent(BankActivity.this, HomeActivity.class);
+                intent.putExtra("LoginUser", myNameLoginString);
+                startActivity(intent);
             }
         });
 

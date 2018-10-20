@@ -102,10 +102,11 @@
 
                     <!--TextFiled-->
                     <Spinner
+                        android:id="@+id/spinnerProvince"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:entries="@array/province" />
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -125,10 +126,11 @@
 
                     <!--TextFiled-->
                     <Spinner
+                        android:id="@+id/spinnerAmper"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:entries="@array/district" />
+                        />
                 </LinearLayout>
 
                 <LinearLayout

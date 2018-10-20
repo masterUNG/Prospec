@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -76,6 +77,9 @@ public class LandTab1Fragment extends Fragment {
 
             if (tab1Bool) {
 
+                ImageView imageView = getView().findViewById(R.id.imvProcess);
+                imageView.setImageResource(R.drawable.first);
+
 //                Just Recoded
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setCancelable(false);
@@ -86,6 +90,7 @@ public class LandTab1Fragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        getActivity().finish();
                     }
                 });
                 builder.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
@@ -122,6 +127,7 @@ public class LandTab1Fragment extends Fragment {
         public void completed() {
             Toast.makeText(getActivity(), "Success Upload", Toast.LENGTH_SHORT)
                     .show();
+            getActivity().finish();
         }
 
         @Override
