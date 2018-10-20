@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27 //ใช้SDK แพ็ทฟอร์ม เลเวลไหนมา compile
     defaultConfig {
         applicationId "com.example.watsana.prospecapplication"//การระบุว่า App ตัวนี้มี ID อะไร
-        minSdkVersion 17//RUN ได้ต่ำสุดเวอร์ชั่นไหน
+        minSdkVersion 15//RUN ได้ต่ำสุดเวอร์ชั่นไหน
         targetSdkVersion 27//เป็นการทดสอบให้ใช้งานได้อย่างจริงจังแล้วถึง Android เวอร์ชั้นไหน
         versionCode 1//เลขเวอร์ชั่น Code
         versionName "1.0"

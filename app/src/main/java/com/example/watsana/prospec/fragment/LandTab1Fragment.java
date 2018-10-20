@@ -1,6 +1,8 @@
 package com.example.watsana.prospec.fragment;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -57,8 +59,49 @@ public class LandTab1Fragment extends Fragment {
 //        Create Spinner
         createSpinner();
 
+//        Check Tab1
+        checkTab1();
+
 
     }//Main Method
+
+    private void checkTab1() {
+        try {
+
+            SharedPreferences sharedPreferences = getActivity()
+                    .getSharedPreferences("landDoc", Context.MODE_PRIVATE);
+            boolean tab1Bool = sharedPreferences.getBoolean("Tab1", false);
+
+            Log.d("20octV1", "current tab1Bool ==> " + tab1Bool);
+
+            if (tab1Bool) {
+
+//                Just Recoded
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setCancelable(false);
+                builder.setIcon(R.drawable.ic_action_alert);
+                builder.setTitle("Confirm");
+                builder.setMessage("Have Record You want to Edit ?");
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.show();
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public class uploadListener implements FTPDataTransferListener {
 
@@ -327,6 +370,14 @@ public class LandTab1Fragment extends Fragment {
             ftpClient.upload(xlsFile, new uploadListener());
 
 
+//            Record Upload
+            SharedPreferences sharedPreferences = getActivity()
+                    .getSharedPreferences("landDoc", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("Tab1", true);
+            editor.commit();
+
+
 
         } catch (FileNotFoundException e) {
             Log.d("19octV2", "e File ==> " + e.toString());
@@ -373,6 +424,8 @@ public class LandTab1Fragment extends Fragment {
         });
 
         setHasOptionsMenu(true);
+
+        toolbar.setNavigationIcon(R.drawable.logo2);
 
     }
 
