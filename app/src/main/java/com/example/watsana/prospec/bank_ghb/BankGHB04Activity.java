@@ -70,6 +70,7 @@ public class BankGHB04Activity extends AppCompatActivity {
 
 
 
+
     }
 
     private void calculate(String[] strings, EditText showEditText) {
