@@ -137,7 +137,8 @@
 
 
                         <EditText
-                            android:id="@+id/EditText7"
+                            android:inputType="number"
+                            android:id="@+id/edtArray"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="จำนวน"
@@ -146,6 +147,7 @@
                             android:textSize="@dimen/h2" />
 
                         <EditText
+                            android:id="@+id/edtTHB"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="บาท"
@@ -353,6 +355,7 @@
                         android:textSize="@dimen/h2" />
 
                     <EditText
+                        android:id="@+id/edtShow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="ผลรวมจำนวนเงิน"
