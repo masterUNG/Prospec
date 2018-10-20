@@ -132,7 +132,7 @@
                     android:hint="@string/not_null"
                     android:inputType="number"
                     android:textAlignment="center"
-                    android:textColorHint="@color/edit_text" />
+                    android:textColorHint="@color/edit_text"/>
             </LinearLayout>
 
             <!--ลำดับที่่-->

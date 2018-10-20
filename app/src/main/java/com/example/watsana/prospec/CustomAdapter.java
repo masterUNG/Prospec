@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import com.example.watsana.prospec.Bank_GHB.ChildInfo;
-import com.example.watsana.prospec.Bank_GHB.GroupInfo;
+import com.example.watsana.prospec.bank_ghb.ChildInfo;
+import com.example.watsana.prospec.bank_ghb.GroupInfo;
 
 import java.util.ArrayList;
 

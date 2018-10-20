@@ -303,7 +303,7 @@
     </string-array>
 
     <string-array name="surface">
-        <item>กกระเบื้องเคลือบ</item>
+        <item>กระเบื้องเคลือบ</item>
         <item>ปาร์เก้</item>
         <item>ไม้</item>
         <item>หินอ่อน</item>
@@ -552,6 +552,30 @@
         <item>ระวางแผนที่</item>
         <item>หมุดหลักเขต</item>
         <item>อื่นๆ</item>
+    </string-array>
+
+<!--Spinner activity_bank_ghb05-->
+    <string-array name="number_photo_two">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="number_photo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="form_plan">
+        <item>แนวนอน 2 ภาพ</item>
+        <item>แนวนอน 3 ภาพ</item>
+        <item>แนวตั้ง 2 ภาพ</item>
+        <item>แนวตั้ง 3 ภาพ</item>
+        <item>แนวตั้ง 2 ภาพ , แนวนอน 1 ภาพ</item>
+        <item>เล็ก 1 ภาพ , แนวนอน 2 ภาพ</item>
+        <item>เล็ก 1 ภาพ , แนวตั้ง 1 ภาพ , แนวนอน 2 ภาพ</item>
     </string-array>
 
 

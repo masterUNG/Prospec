@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@android:color/white"
-        tools:context=".Bank_GHB.BankActivity">
+        tools:context=".bank_ghb.BankActivity">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -89,7 +89,7 @@
                             android:layout_height="140dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/bank1_ghb"/>
+                            android:src="@drawable/bank_all"/>
 
                     </LinearLayout>
 

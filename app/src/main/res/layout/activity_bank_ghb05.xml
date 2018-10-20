@@ -5,18 +5,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Bank_GHB.BankGHB05Activity">
+        tools:context=".bank_ghb.BankGHB05Activity">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="ScrollViewCount,UselessParent">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="ScrollViewSize,UselessLeaf">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -35,8 +33,7 @@
                             android:layout_marginLeft="22dp"
                             android:layout_marginTop="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/logo"
-                            tools:ignore="ContentDescription,RtlHardcoded" />
+                            android:background="@drawable/logo" />
 
                         <TextView
                             android:id="@+id/textView"
@@ -50,8 +47,7 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/holo_orange_dark"
                             android:textSize="36dp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -79,155 +75,125 @@
                     app:spb_animateToCurrentProgressState="true"
                     app:spb_checkStateCompleted="true"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ประเภทการกู้"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@id/textView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
-                    android:text="ตำแหน่งที่ดิน"
+                    android:layout_marginLeft="16dp"
+                    android:text="แผ่นที่"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/radioButton1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:text="ถูกต้อง" />
-
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:text="ไม่ถูกต้อง" />
-            </LinearLayout>
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photo"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dp"
-                        android:padding="10dp"
-                        android:text="ตรวจสอบจาก"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <Spinner
-                        android:id="@+id/spinner1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:entries="@array/investigate" />
+                        android:layout_marginLeft="16dp"
+                        android:text="แบบขยาย (2)"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/h1"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:entries="@array/number_photo_two" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:text="สภาพที่ดิน"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photo"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="เล่มที่"
+                        android:layout_marginLeft="16dp"
+                        android:text="แบบแปลน (5)"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
+                        android:textSize="@dimen/h1"
+                        android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/EditText6"
-                        android:layout_width="wrap_content"
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="5"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
+                        android:layout_marginLeft="16dp"
+                        android:entries="@array/number_photo" />
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/photo"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center">
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Back"
+                        android:layout_marginLeft="16dp"
+                        android:text="ภาพถ่ายทรัพย์สิน *(5)"
                         android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        android:background="#ecf18b"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        android:textSize="@dimen/h1"
+                        android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="370dp"
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="5dp"
-                        android:text="Save"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        android:background="#eda840"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Next"
-                        android:background="#ecf18b"
-                        android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        android:layout_marginLeft="16dp"
+                        android:entries="@array/number_photo" />
                 </LinearLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/form_plan" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/photo"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-

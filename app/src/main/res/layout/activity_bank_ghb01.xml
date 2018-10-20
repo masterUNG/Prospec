@@ -5,18 +5,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ALL_land_and_building.LandTab1Activity">
+        tools:context=".bank_ghb.BankGHB01Activity">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="ScrollViewCount,UselessParent">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="ScrollViewSize,UselessLeaf">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -35,8 +33,7 @@
                             android:layout_marginLeft="22dp"
                             android:layout_marginTop="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/logo"
-                            tools:ignore="ContentDescription,RtlHardcoded" />
+                            android:background="@drawable/logo" />
 
                         <TextView
                             android:id="@+id/textView"
@@ -50,8 +47,7 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/holo_orange_dark"
                             android:textSize="36dp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -86,447 +82,579 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
-                    android:text="เอกสารสิทธิ"
+                    android:text="ลงทะเบียน"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="5dp"
-                    android:text="จำนวนกลุ่ม"
+                    android:text="ผู้ใช้งาน"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView3"
+                    <!--Select-->
+                    <RadioButton
+                        android:id="@+id/radioButton1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="กลุ่มที่"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:text="ผู้สำรวจ" />
 
-                    <EditText
-                        android:id="@+id/EditText1"
+                    <!--Select-->
+                    <RadioButton
+                        android:id="@+id/radioButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="ลำดับที่"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:text="ผู้ประเมิน" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="ประเภทเอกสารสิทธิ์"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="15"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="เลขที่เอกสารสิทธิ์์"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dp"
-                        android:padding="10dp"
-                        android:text="เลขที่ดิน"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="5"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="ระวาง"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="13"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dp"
-                        android:padding="10dp"
-                        android:text="หน้าสำรวจ"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dp"
-                        android:padding="10dp"
-                        android:text="หน้าที่"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="เล่มที่"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="เนื้อที่ดิน"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="15"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:text="จำนวนแปลง"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <EditText
-                        android:id="@+id/EditText11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="กรอกข้อมูล"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:text="ประเภทเอกสารสิทธิ์"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <Spinner
-                        android:id="@+id/spinner1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:entries="@array/category" />
-
-                    <EditText
-                        android:id="@+id/EditText12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:ems="12"
-                        android:hint="กรอกข้อมูลอื่นๆ"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18dp"
-                        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,SpUsage,TextFields" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อ-สกุล"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เลขที่สมาชิก/ผู้ประเมินหลัก"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="หนังสือเลขที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ลงวันที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <!--DatePicker-->
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/h2"
+                        android:background="#ddf40e"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="5dp"
-                    android:text="เอกสารสิทธิ์ที่ตั้งอาคารชุด"
+                    android:text="ผู้ประเมินหลัก"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อ-สกุล"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เลขที่สมาชิก/ผู้ประเมินหลัก"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="หนังสือเลขที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ลงวันที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <!--DatePicker-->
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/h2"
+                        android:background="#ddf40e"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="ผู้รับมอบอำนาจ"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center">
+                    android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/button1"
+                    <!--Select-->
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="80dp"
-                        android:text="ย้อนกลับ"
-                        android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        android:background="#ecf18b"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:text="ผู้จัดการ" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="370dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="80dp"
-                        android:layout_marginLeft="5dp"
-                        android:text="บันทึก"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        android:background="#eda840"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
-
-                    <Button
-                        android:id="@+id/button3"
+                    <!--Select-->
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="80dp"
-                        android:text="ถัดไป"
-                        android:background="#ecf18b"
-                        android:textColor="@android:color/black"
-                        android:textSize="25sp"
-                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:text="ผู้รับมอบอำนาจ" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อ-สกุล"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เลขที่สมาชิก/ผู้ประเมินหลัก"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="หนังสือเลขที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ลงวันที่"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <!--DatePicker-->
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/h2"
+                        android:background="#ddf40e"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="ธุรการ"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อ-สกุล"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อ-สกุล"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/h2"
+                        android:background="#ddf40e"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="สังกัดหนวยงาน"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ฝ่าย"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="สาขา"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Tile-->
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ศูนย์"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <!--TextFiled-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/not_null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"/>
+                </LinearLayout>
+
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

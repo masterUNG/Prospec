@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context=".ALL_land_and_building.HomeActivity">
+    tools:context=".all_land_and_building.HomeActivity">
 
     <!--Logo-->
     <LinearLayout

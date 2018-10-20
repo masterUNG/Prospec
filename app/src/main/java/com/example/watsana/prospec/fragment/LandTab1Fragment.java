@@ -45,6 +45,7 @@ public class LandTab1Fragment extends Fragment {
     private String[] strings;
     private Uri uri;
     private FTPClient ftpClient;
+    private int anInt = 0;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -168,9 +169,26 @@ public class LandTab1Fragment extends Fragment {
         final String string10 = editText10.getText().toString().trim();
         final String string11 = editText11.getText().toString().trim();
 
-        if (string1.isEmpty() || string2.isEmpty() || string3.isEmpty() || string4.isEmpty() ||
-                string5.isEmpty() || string6.isEmpty() || string7.isEmpty() || string8.isEmpty() ||
-                string9.isEmpty() || string10.isEmpty() || string11.isEmpty()) {
+
+        String[] strings = new String[]{string1, string2, string3, string4,
+                string5, string6, string7, string8, string9, string10, string11};
+
+        for (int i = 0; i < strings.length; i +=1) {
+            if (strings[i].isEmpty()){
+                anInt += 1;
+            }
+        }
+
+        Log.d("19octV2", "anInt ==>" + anInt);
+
+
+//        Old code
+
+//        if (string1.isEmpty() || string2.isEmpty() || string3.isEmpty() || string4.isEmpty() ||
+//                string5.isEmpty() || string6.isEmpty() || string7.isEmpty() || string8.isEmpty() ||
+//                string9.isEmpty() || string10.isEmpty() || string11.isEmpty()) {
+
+        if (false) {
 
 //            Have Space
             MyAlert myAlert = new MyAlert(getActivity());
